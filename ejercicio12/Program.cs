@@ -14,8 +14,7 @@ namespace ejercicio12
             int numeroColumnas;
             int valorMatriz;
 
-            do
-            {
+            
                 //Introducimos  numero de filas  de la matriz
                 Console.WriteLine("Input the number of rows of the matrix");
                 string filas = Console.ReadLine();
@@ -27,7 +26,7 @@ namespace ejercicio12
                 string columnas = Console.ReadLine();
                 bool comprobacion1 = Int32.TryParse(columnas, out numeroColumnas);
 
-            } while (numeroFilas != numeroColumnas);
+            
 
             //Declaramos matriz entrada con numero filas y columnas
             int[,] matrizEntrada = new int[numeroFilas, numeroColumnas];
