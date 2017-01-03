@@ -27,10 +27,10 @@ namespace ejer10
             {
                 for (int j = 0; j < tamanioMatriz; j++)
                 {
-                    Console.WriteLine("Element [" + i +"],"+ "[" + j +"]");
+                    Console.WriteLine("Element [" + i + "]," + "[" + j + "]");
                     string element = Console.ReadLine();
                     bool comprobacion1 = Int32.TryParse(element, out numero3);
-                    matrizEntrada[i,j] = numero3;
+                    matrizEntrada[i, j] = numero3;
                 }
             }
 
