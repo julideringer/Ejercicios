@@ -48,36 +48,86 @@ namespace Ejercicio16
             return largoCuadrado *  Anchura;
         }
 
+        public class FiguraGeometrica
+        {
+            private int altura;
+            private int anchura;
+
+            public FiguraGeometrica(int _altura, int _anchura)
+            {
+                this.altura = _altura;
+                this.anchura = _anchura;
+            }
+
+            public float Area()
+            {
+                return (float)altura * (float)anchura;
+            }
+
+            public float Perimetro()
+            {
+                return (float)altura * 2 + (float)anchura * 2; 
+            }
+
+            public int DevelveAltura()
+            {
+                return altura;
+            }
+
+            public int DevuelveAnchura()
+            {
+                return anchura;
+            }
+        }
+
         static void Main(string[] args)
         {
-            double lengthCuadrado;
-            double breadthCuadrado;
+            //double lengthCuadrado;
+            //double breadthCuadrado;
 
-            Program Cuadrado = new Program();
+            //Program Cuadrado = new Program();
 
-            /////////Introducimos los valores del cuadrado
+            ///////////Introducimos los valores del cuadrado
 
-            //Introducimos la longitud del cuadrado
-            Console.WriteLine("Input the dimensions of the Square(equal length and breadth");
-            Console.Write("Length: ");
-            string largo = Console.ReadLine();
-            Console.Write("Ancho: ");
-            string ancho = Console.ReadLine();
-            double.TryParse(largo, out lengthCuadrado);
-            double.TryParse(ancho, out breadthCuadrado);
+            ////Introducimos la longitud del cuadrado
+            //Console.WriteLine("Input the dimensions of the Square(equal length and breadth");
+            //Console.Write("Length: ");
+            //string largo = Console.ReadLine();
+            //Console.Write("Ancho: ");
+            //string ancho = Console.ReadLine();
+            //double.TryParse(largo, out lengthCuadrado);
+            //double.TryParse(ancho, out breadthCuadrado);
 
-            //Mostramos valores por pantalla usando los métodos que nos pide el ejercicio
+            ////Mostramos valores por pantalla usando los métodos que nos pide el ejercicio
 
-            Console.WriteLine("Perimeter and Area of the square");
-            Console.WriteLine("Length:"+Cuadrado.calculoAnchura(lengthCuadrado));
-            Console.WriteLine("Breadth: " + Cuadrado.calculoLongitud(breadthCuadrado));
-            //calculoPerimetro
-            Console.WriteLine("Perimeter: " + Cuadrado.calculoPerimetro(lengthCuadrado,breadthCuadrado));
-            //Calculo AREA
-            Console.WriteLine("Area: " + Cuadrado.calculoArea(lengthCuadrado, breadthCuadrado));
+            //Console.WriteLine("Perimeter and Area of the square");
+            //Console.WriteLine("Length:"+Cuadrado.calculoAnchura(lengthCuadrado));
+            //Console.WriteLine("Breadth: " + Cuadrado.calculoLongitud(breadthCuadrado));
+            ////calculoPerimetro
+            //Console.WriteLine("Perimeter: " + Cuadrado.calculoPerimetro(lengthCuadrado,breadthCuadrado));
+            ////Calculo AREA
+            //Console.WriteLine("Area: " + Cuadrado.calculoArea(lengthCuadrado, breadthCuadrado));
 
 
-            Console.ReadLine();
+            //Console.ReadLine();
+
+
+            FiguraGeometrica miFigura = devuelveEstructura(5,8);
+
+            float miArea = miFigura.Area();
+            float miPerimetro = miFigura.Perimetro();
+            int miAltura = miFigura.DevelveAltura();
+            int miAnchura = miFigura.DevuelveAnchura();
+
+            
         }
+
+        public static FiguraGeometrica devuelveEstructura( int altura, int anchura)
+        {
+            FiguraGeometrica nuevaFigura = new FiguraGeometrica(altura, anchura);
+
+            return nuevaFigura;
+        }
+
     }
 }
