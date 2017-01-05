@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejer2linq", "ejer2linq\ejer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer3linq", "Ejer3linq\Ejer3linq.csproj", "{1EF6C672-E77A-4350-8157-98100B95D51D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer4linq", "Ejer4linq\Ejer4linq.csproj", "{C84BB184-426D-4D8A-A48D-917D693EC88E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{1EF6C672-E77A-4350-8157-98100B95D51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EF6C672-E77A-4350-8157-98100B95D51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EF6C672-E77A-4350-8157-98100B95D51D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C84BB184-426D-4D8A-A48D-917D693EC88E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84BB184-426D-4D8A-A48D-917D693EC88E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C84BB184-426D-4D8A-A48D-917D693EC88E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C84BB184-426D-4D8A-A48D-917D693EC88E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
