@@ -44,6 +44,7 @@ namespace ejercicio15
                 //Console.WriteLine("Binary{0}", binario);
             }
 
+            Console.WriteLine(""+binario);
             //Imprimimos por pantalla el string invertido.
             string t = ""; ;
 
