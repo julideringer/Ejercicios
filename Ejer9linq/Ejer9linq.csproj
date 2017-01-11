@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{58BF18FA-7463-48A9-AA6F-4FC0A30C37CF}</ProjectGuid>
+    <ProjectGuid>{20EA472A-4C5B-4877-AA42-2A1C66837403}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ejercicio16</RootNamespace>
-    <AssemblyName>Ejercicio16</AssemblyName>
+    <RootNamespace>Ejer9linq</RootNamespace>
+    <AssemblyName>Ejer9linq</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cities.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quantity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
